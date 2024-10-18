@@ -8,3 +8,4 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__GestaoConnection=User Id=rm550589;Password=220323;Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=oracle.fiap.com.br)(PORT=1521)))(CONNECT_DATA=(SID=ORCL)))
+    restart: always  # Garante que o container seja reiniciado em caso de falha
